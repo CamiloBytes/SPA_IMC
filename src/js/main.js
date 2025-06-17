@@ -1,13 +1,7 @@
-let myWeight
-let myHeight
-let imc
-
-myWeight=prompt(message="please, write your weight")
-myHeight=prompt(message="please, write your weight")
-
-parseInt (myWeight)
-parseInt (myHeight)
-
-imc= myWeight/(myHeight * myHeight)
-
-alert("your IMC is "+ imc)
+function obtenerInput() {
+    let heidth = document.getElementById("heidth").value
+    let weidth = document.getElementById("weidth").value
+    const valor = weidth / (heidth * heidth)
+    const respuesta=document.getElementById("respuesta")
+    respuesta.innerHTML = 'El valor de tu IMC es de: '+valor 
+}
