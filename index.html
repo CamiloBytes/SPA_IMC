@@ -27,20 +27,20 @@
     <main>
         <section>
             <div class="input1">
-                <label for="name">Ingrese tu altura</label>
-                <input type="text" id="height" placeholder="Nombre">
+                <label for="height">Ingrese tu altura</label>
+                <input type="number"  id="height" placeholder="Nombre" min="0">
             </div>
             <div class="input2">
-                <label for="ega">Ingresa tu peso</label>
-                <input type="text" id="weight" placeholder="Edad">
+                <label for="weight">Ingresa tu peso</label>
+                <input type="number"   id="weight" placeholder="Edad" min="0">
             </div>
             <div class="input3">
                 <button onclick="obtenerInput()">Calcular</button>
             </div>
         </section>
 
-        <section>
-            <div class="respuesta">
+        <section class="respuesta">
+            <div id="respuesta">
 
             </div>
         </section>
@@ -48,7 +48,7 @@
 
     <footer></footer>
 
-    <script src="./src/js/main.js"></script>
+    
 </body>
-
+<script src="./src/js/main.js"></script>
 </html>

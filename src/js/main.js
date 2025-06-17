@@ -1,7 +1,8 @@
 function obtenerInput() {
-    let heidth = document.getElementById("heidth").value
-    let weidth = document.getElementById("weidth").value
-    const valor = weidth / (heidth * heidth)
-    const respuesta=document.getElementById("respuesta")
-    respuesta.innerHTML = 'El valor de tu IMC es de: '+valor 
+    const heidth = document.getElementById("height").value
+    const weidth = document.getElementById("weight").value
+    let imc = weidth / (heidth * heidth)
+    let valor= imc.toFixed(2)
+    let respuesta=document.getElementById("respuesta")
+    respuesta.innerHTML = "El resultado de su IMC es: "+valor
 }

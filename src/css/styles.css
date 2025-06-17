@@ -23,6 +23,7 @@ main{
     color: #fff;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .input1{
@@ -97,5 +98,8 @@ button:hover{
 }
 
 .respuesta{
-    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
 }
